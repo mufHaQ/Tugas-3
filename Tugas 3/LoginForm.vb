@@ -14,6 +14,7 @@ Public Class LoginForm
         '    MessageBox.Show("Tolong masukkan password yang benar!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         'End If
 
+        'cek Update
         'Online Login ambil dari pastebin
         Dim wc As New WebClient
         Dim strings As String
