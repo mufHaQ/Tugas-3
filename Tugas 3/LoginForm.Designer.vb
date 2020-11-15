@@ -29,7 +29,7 @@ Partial Class LoginForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -110,16 +110,19 @@ Partial Class LoginForm
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "WinForm"
         '
-        'CheckBox1
+        'Button3
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(12, 12)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(88, 20)
-        Me.CheckBox1.TabIndex = 7
-        Me.CheckBox1.Text = "TopMost"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Button3.BackColor = System.Drawing.Color.Red
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
+        Me.Button3.Location = New System.Drawing.Point(176, 203)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(100, 40)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Back"
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'LoginForm
         '
@@ -127,7 +130,7 @@ Partial Class LoginForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(534, 311)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -152,5 +155,5 @@ Partial Class LoginForm
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button3 As Button
 End Class

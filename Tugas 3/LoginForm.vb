@@ -33,18 +33,19 @@ Public Class LoginForm
     End Sub
 
     Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        If MainForm.CheckBox1.Checked Then
+            TopMost = True
+        Else
+            TopMost = False
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Process.Start("https://pastebin.com/raw/3Px0qBPk")
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked = True Then
-            TopMost = True
-        Else
-            TopMost = False
-        End If
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Close()
+        MainForm.Show()
     End Sub
 End Class
